@@ -23,7 +23,8 @@
         btn.addEventListener('click', function(event){
             // console.log(event.target);
             if(event.target.parentElement.classList.contains('store-item-icon')){
-                console.log(event.target.parentElement.previousElementSibling.src);
+                let fullPath = event.target.parentElement.previousElementSibling.src;
+                let pos = fullPath.indexOf("img")
             }
 
         })
