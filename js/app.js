@@ -20,15 +20,20 @@
     const cartBtn = document.querySelectorAll('.store-item-icon');
 
     cartBtn.forEach(function(btn){
-        btn.addEventListener('click', function(event){
+        btn.addEventListener("click", function(event){
             // console.log(event.target);
+
             if(event.target.parentElement.classList.contains('store-item-icon')){
-                let fullPath = event.target.parentElement.previousElementSibling.src;
-                let pos = fullPath.indexOf("img")
+
+
+                console.log(event.target.parentElement.previousElementSibling.src);
             }
 
+
         })
-    });
+
+    })
+
 
 
 
