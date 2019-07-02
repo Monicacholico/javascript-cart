@@ -47,8 +47,38 @@
 
                 // console.log(name);
 
-                console.log(item);
+                // console.log(item);
+
+                const cartItem = document.createElement('div');
+                cartItem.classList('cart-item',
+                    'd-flex',
+                    'justify-content-between',
+                    'text-capitalize',
+                    'my-3');
+
+                cartItem.innerHTML =`
+                <img src="${item.img}" class="img-fluid rounded-circle" id="item-img" alt="">
+                    <div class="item-text">
+                  <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+                <span>$</span>
+                <span id="cart-item-price" class="cart-item-price" class="mb-0">10.99</span>
+                    </div>
+                    <a href="#" id='cart-item-remove' class="cart-item-remove">
+                    <i class="fas fa-trash"></i>
+                    </a>
+                    </div>
+`;
+
+                //select cart
+
+                const cart = document.getElementById('cart');
+                const total = document.querySelectorAll(".cart-total-container");
+
+                cart.insertBefore(cartItem, total);
+
+
             }
+
 
 
         })
