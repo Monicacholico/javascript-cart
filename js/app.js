@@ -97,7 +97,7 @@
         }, 0);
 
         const finalMoney = totalMoney.toFixed(2);
-        console.log(finalMoney);
+        // console.log(finalMoney);
 
         document.getElementById("cart-total").textContent = finalMoney;
         document.querySelector(".item-total").textContent = finalMoney;
